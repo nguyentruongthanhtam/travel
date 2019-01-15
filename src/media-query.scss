@@ -1,0 +1,18 @@
+// Phone break point
+$break-small: 414px;
+// tablet break point
+$break-medium: 768px;
+// widescreen break point
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium - 1) { @content; }
+  }
+  @else if $media == widescreen {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
