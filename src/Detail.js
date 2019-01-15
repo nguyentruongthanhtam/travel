@@ -20,7 +20,7 @@ export default class Detail extends Component {
     });
     tl
     .add({
-      targets: '.App .detail-wrapper .name',
+      targets: '.App .detail-wrapper .title',
       translateY: [0,20],
       opacity: [1,0],
     })
@@ -30,11 +30,6 @@ export default class Detail extends Component {
       easing: 'easeInOutSine',
       delay: anime.stagger(400)
     })
-    // .add({
-    //   targets: ['.square1','.square2'],
-    //   opacity: [0,1],
-    //   delay: anime.stagger(100) // increase delay by 100ms for each elements.
-    // })
     this.props.onBack(); // send onClose event to parent Compoent
   }
   render(){

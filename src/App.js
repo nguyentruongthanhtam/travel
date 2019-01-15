@@ -16,120 +16,134 @@ class App extends Component {
       content: [
         {
           name: 'Santorini',
-          description: 'loreAute esse nostrud aliquip aliquip nostrud culpa eiusmod minim laboris est commodo dolore est sint.',  
-          time: '2/2018',
-          photos: [require('./assets/1x/s-f.jpg'), require('./assets/2.jpg'), require('./assets/1x/s-m.png'), 20 ],
+          description: 'The 1st city in my bucket list.',  
+          time: '10/2015',
+          photos: [require('./assets/1x/s-f.jpg'), require('./assets/Santorini/2.jpg'), require('./assets/1x/s-m.png'), 20 ],
           // photos array format: Main photo, secondary photo, Mask for layering effect, topMargin for City name, leftMargin for City name, City name text color. 
           gallery: [
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Santorini/1.jpeg'), 
+              name: 'Fira Ocean',
+              caption: 'Fira at the gloriest time of the day.'
             },
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Santorini/2.jpg'), 
+              name: 'Tunnel',
+              caption: 'Hide away from the heat.'
             },
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Santorini/3.jpg'), 
+              name: 'Greek Yogurt',
+              caption: 'Little treat after lunch.'
             },
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Santorini/4.jpg'), 
+              name: 'A Lone Boat',
+              caption: 'Approaching the harbour.'
+            },
+            {
+              src:require('./assets/Santorini/5.jpg'), 
+              name: 'Tourist',
+              caption: 'Blending in with tourist group.'
+            },
+            {
+              src:require('./assets/Santorini/6.jpg'), 
+              name: 'Frame',
+              caption: 'Santorini throught a frame.'
             },
           ],
         },
         {
           name: 'Crete',
-          description: 'loreAute esse nostrud aliquip aliquip nostrud culpa eiusmod minim laboris est commodo dolore est sint.',  
+          description: 'The next destination after Santorini which I know little about.',  
           time: '2/2018',
-          photos: [require('./assets/1x/Crete-f.jpg'),  require('./assets/2.jpg'), require('./assets/1x/Crete-m.png'), 10, 0 ],
+          photos: [require('./assets/1x/Crete-f.jpg'),  require('./assets/Crete/2.jpg'), require('./assets/1x/Crete-m.png'), 10, 0 ],
           gallery: [
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Crete/1.jpg'), 
+              name: 'Lighthouse',
+              caption: 'Gorgeous sunset at Chania Port.'
             },
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Crete/2.jpg'), 
+              name: 'Sunset',
+              caption: 'Dinner with view.'
             },
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Crete/3.jpg'), 
+              name: 'Sunrise',
+              caption: 'Sunrise at the airport.'
             },
-            {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
-            },
+            
           ],
         },
         {
           name: 'Venice',
-          description: 'loreAute esse nostrud aliquip aliquip nostrud culpa eiusmod minim laboris est commodo dolore est sint.',  
+          description: 'One of the most, if not the most glorious locations in the world.',  
           time: '2/2018',
-          photos: [require('./assets/1x/Venice-f.jpg'),  require('./assets/2.jpg'), require('./assets/1x/Venice-m.png'), 5 , , 'rgba(119,71,57,.7)' ],
+          photos: [require('./assets/1x/Venice-f.jpg'),  require('./assets/Venice/2.jpg'), require('./assets/1x/Venice-m.png'), 5 , , 'rgba(119,71,57,.7)' ],
           gallery: [
             {
-              src:require('./assets/1.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Venice/1.jpg'), 
+              name: 'Backlight',
+              caption: 'Afternoon shine.'
             },
             {
-              src:require('./assets/2.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Venice/2.jpg'), 
+              name: 'The View',
+              caption: 'No caption needed.'
             },
             {
-              src:require('./assets/3.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
-            },
-            {
-              src:require('./assets/4.jpg'), 
-              name: 'Name',
-              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+              src:require('./assets/Venice/3.jpg'), 
+              name: 'Ariel',
+              caption: 'Ariel view from a tower.'
             },
           ],
         },
         {
           name: 'Tokyo',
-          description: 'loreAute esse nostrud aliquip aliquip nostrud culpa eiusmod minim laboris est commodo dolore est sint.',  
-          time: '2/2018',
-          photos: [require('./assets/1x/Tokyo-f.jpg'), require('./assets/2.jpg'),require('./assets/1x/Tokyo-m.png'), 1 , 0 ,'rgba(3,14,34,.7)' ],
+          description: 'The city where I dream to be since I was a little kid.',  
+          time: '4/2015',
+          photos: [require('./assets/1x/Tokyo-f.jpg'), require('./assets/Tokyo/2.jpg'),require('./assets/1x/Tokyo-m.png'), 1 , 0 ,'rgba(3,14,34,.7)' ],
           gallery: [
             {
-              src:require('./assets/1.jpg'), 
+              src:require('./assets/Tokyo/1.jpg'), 
               name: 'Name',
               caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
             },
             {
-              src:require('./assets/1.jpg'), 
+              src:require('./assets/Tokyo/2.jpg'), 
               name: 'Name',
               caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
             },
             {
-              src:require('./assets/1.jpg'), 
+              src:require('./assets/Tokyo/3.jpg'), 
               name: 'Name',
               caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
             },
             {
-              src:require('./assets/1.jpg'), 
+              src:require('./assets/Tokyo/4.jpg'), 
+              name: 'Name',
+              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+            },
+            {
+              src:require('./assets/Tokyo/5.jpg'), 
+              name: 'Name',
+              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+            },
+            {
+              src:require('./assets/Tokyo/6.jpg'), 
+              name: 'Name',
+              caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
+            },
+            {
+              src:require('./assets/Tokyo/7.jpg'), 
               name: 'Name',
               caption: 'Labore quis adipisicing ipsum adipisicing et labore nisi ullamco proident laborum elit nisi.'
             },
           ],
         },
-        
       ],
-      
     }
   }
   onSelected = (e) => {
@@ -151,7 +165,7 @@ class App extends Component {
     .add({
       targets: ['.detail-wrapper .blank','.detail-wrapper'],
       translateY: '-100vh',
-      delay: anime.stagger(400),
+      delay: anime.stagger(300),
       easing: 'easeInOutSine',
     })
     .add({
