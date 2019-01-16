@@ -15,6 +15,7 @@ html, body {min-height: 100%;}
   {
     overflow: visible;
   }
+  // Main wrapper style
   .wrapper
   {
     width: 100vw;
@@ -26,6 +27,7 @@ html, body {min-height: 100%;}
     @include respond-to(mobile) { 
       flex-direction: column-reverse;
     }
+    // Navigation Component style
     nav
     {
       transition: all .5s ease-in-out;
@@ -33,7 +35,7 @@ html, body {min-height: 100%;}
       flex: 1;
       flex-direction: column;
       height: 400px;
-      padding-left: 4em;
+      padding-left: 60px;
       position: relative;
       @include respond-to(mobile) { 
         height: 200px;
@@ -72,6 +74,7 @@ html, body {min-height: 100%;}
           height: 2em;
         }
       }
+      // Transparent arrow in Navigation block style
       .arrows
       {
         font-size: 2em;
@@ -94,12 +97,14 @@ html, body {min-height: 100%;}
         }
       }
     }
+    // Navigation component style
     .nav-wrapper
     {
       @include respond-to(mobile) { 
        padding-top: 80px !important;
       }
     }
+    // City name style
     .name
     {
       padding: 0 ;
@@ -135,6 +140,7 @@ html, body {min-height: 100%;}
         }
       }
     }
+    // Images Squares block style
     .decors
     {
       flex: 2;
@@ -147,14 +153,16 @@ html, body {min-height: 100%;}
        width: 100%;
       }
     }
+    // 1st Image Square style
     .square1
     {
       width: 45vw;
       height: 45vw;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       @include respond-to(mobile) { 
-        width: 80vw;
-        height: 80vw;
+        width: 100vw;
+        height: 100%;
+        clip-path: unset;
       }
       &>div
       {
@@ -164,10 +172,11 @@ html, body {min-height: 100%;}
         height: 100%;
         animation: 7s bg-move ease-in-out alternate infinite;
         @include respond-to(mobile) { 
-          animation: unset;
+          // animation: unset;
         }
       }
     }
+    // 2nd Image Square style
     .square2
     {
       width: 20vw;
@@ -178,10 +187,12 @@ html, body {min-height: 100%;}
       background-color: white;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       @include respond-to(mobile) { 
+        display: none;
+        z-index: 0;
         width: 200px;
         height: 200px;
         left: unset;
-        top: 200px;
+        top: -50px;
       }
       &>div
       {
@@ -208,10 +219,11 @@ html, body {min-height: 100%;}
         }
       }
     }
+    // Gallery Button on homepage style
     .button
     {
       padding: .5em 1em;
-      background-color: rgba(240,240,240,0.9);
+      background-color: rgba(240,240,240,0.5);
       cursor: pointer;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 1.5em;
@@ -223,24 +235,27 @@ html, body {min-height: 100%;}
       transform: rotate(45deg);
       transform-origin: center;
       transition: box-shadow .2s ease;
+      @include respond-to(mobile) { 
+        transform: unset;
+        top: -10px;
+        right: unset;
+        position: relative;
+        font-size: 1em;
+        box-shadow: 3px 3px 2px 0px rgba(200,200,200, .5);
+      }
       &:hover
       {
         box-shadow: 3px 3px 2px 0px rgba(200,200,200, .8);
-
-      }
-      @include respond-to(mobile) { 
-        right: 9vw;
-        top: 20vw;
-        font-size: 1em;
       }
     }
+    // Pagination Component style
     .pagination
     {
       position: absolute;
       font-size: 1em;
       bottom: 15vw;
       right: 15vw;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: $font-2;
       display: flex;
       align-items: baseline;
       transform: rotate(-45deg);
@@ -248,8 +263,12 @@ html, body {min-height: 100%;}
       @include respond-to(mobile) { 
         bottom: unset;
         right: unset;
-        left: 15vw;
-        top: 40vh;
+        position: relative;
+        transform: unset;
+        z-index: 1;
+        float: left;
+        width: 100vw;
+        top: -40px;
       }
       .dash
       {
@@ -260,12 +279,14 @@ html, body {min-height: 100%;}
         background-color: #444;
       }
     }
+    // Copyrights block style
     .copyrights
     {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 2em 4em;
+      padding: 40px 60px;
+      color: rgba(100, 100, 100, .7);
       @include respond-to(mobile) { 
         transform-origin: left top;
         padding: 0;
@@ -274,24 +295,28 @@ html, body {min-height: 100%;}
         transform: rotate(-90deg);
       }
     }
+    // Website title style
     .title
     {
-      font-size: 1.2em;
-      font-weight: 500;
+      font-size: 1.5em;
+      font-family: $font-2;
+      z-index: 9;
       position: absolute;
       top: 0;
       left: 0;
-      padding: 2em 4em;
+      padding: 40px 60px;
       @include respond-to(mobile) { 
         padding: 1em 0;
         left: unset;
       }
     }
   } 
+  // Detail Component style
   .detail-wrapper
   {
     position: relative;
     z-index: 2;
+    // blank page for transition effect
     .blank
     {
       width: 100%;
@@ -302,6 +327,7 @@ html, body {min-height: 100%;}
       top: 0;
       left: 0;
     }
+    // Landing block in Detail Component
     .landing
     {
       flex-direction: column;
@@ -309,6 +335,7 @@ html, body {min-height: 100%;}
       height: 100vh;
       position: relative;
       overflow: hidden;
+      // Mask photo to create layering effect
       .mask{
         position : absolute;
         z-index  : 2;
@@ -330,6 +357,7 @@ html, body {min-height: 100%;}
         width    : 100%;
         height   : 20%;
       }
+      // City name block in landing block style
       .title
       {
         width: 100vw;
@@ -344,46 +372,50 @@ html, body {min-height: 100%;}
           left: unset !important;
         }
       }
+      // City name and date in Landing block styles
       .text
       {
         font-family: $font-2;
-        color: rgba(255,255,255, 0.8);
+        color: unset;
         margin: 0;
       }
-      
+      // Back button in Landing block style
       .back
       {
         z-index: 5;
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: 2em;
+        right: 2em;
         cursor: pointer;
-        color: white;
+        // color: white;
       }
     }
+    // Quote in Detail Component style
     .quote
     {
       color: $color-primary;
       width: 50%;
-      margin: 2em auto;
-      padding: 3em;
+      // height: 400px;
+      margin: 0 auto;
+      padding: 200px;
       font-size: 1.5em;
       text-align: center;
       @include respond-to(mobile) { 
-       width: auto;
-       padding: 1em;
+       width: 100%;
+       padding: 100px 0;
        font-size: 1em;
       }
     }
+    // Gallery Component style
     .gallery
     {
       overflow-x: hidden;
-      // z-index: 4;
       &>h1
       {
         text-align: center;
         color: $color-primary;
       }
+      // Cards grid style
       .cards
       {
         display: flex;
@@ -391,11 +423,12 @@ html, body {min-height: 100%;}
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
+        // Card style
         .card
         {
           width: 30%;
           height: 400px;
-          margin: 1em .5em;
+          margin: 1em 1em;
           position: relative;
           overflow: hidden;
           border-radius: 2%;

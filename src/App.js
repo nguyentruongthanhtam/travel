@@ -17,7 +17,7 @@ class App extends Component {
         {
           name: 'Santorini',
           description: 'The 1st city in my bucket list.',  
-          time: '10/2015',
+          time: '10/2016',
           photos: [require('./assets/1x/s-f.jpg'), require('./assets/Santorini/2.jpg'), require('./assets/1x/s-m.png'), 20 ],
           // photos array format: Main photo, secondary photo, Mask for layering effect, topMargin for City name, leftMargin for City name, City name text color. 
           gallery: [
@@ -56,7 +56,7 @@ class App extends Component {
         {
           name: 'Crete',
           description: 'The next destination after Santorini which I know little about.',  
-          time: '2/2018',
+          time: '10/2016',
           photos: [require('./assets/1x/Crete-f.jpg'),  require('./assets/Crete/2.jpg'), require('./assets/1x/Crete-m.png'), 10, 0 ],
           gallery: [
             {
@@ -80,7 +80,7 @@ class App extends Component {
         {
           name: 'Venice',
           description: 'One of the most, if not the most glorious locations in the world.',  
-          time: '2/2018',
+          time: '1/2017',
           photos: [require('./assets/1x/Venice-f.jpg'),  require('./assets/Venice/2.jpg'), require('./assets/1x/Venice-m.png'), 5 , , 'rgba(119,71,57,.7)' ],
           gallery: [
             {
@@ -103,7 +103,7 @@ class App extends Component {
         {
           name: 'Tokyo',
           description: 'The city where I dream to be since I was a little kid.',  
-          time: '4/2015',
+          time: '4/2016',
           photos: [require('./assets/1x/Tokyo-f.jpg'), require('./assets/Tokyo/2.jpg'),require('./assets/1x/Tokyo-m.png'), 1 , 0 ,'rgba(3,14,34,.7)' ],
           gallery: [
             {
@@ -186,13 +186,20 @@ class App extends Component {
     return (
       <div className="App" ref={this.ref_App}>
         <div className="wrapper">
+          {/* Navigation Component */}
           <Nav selected={this.onSelected} navigation={content}></Nav>
-          <Image src={content[selected]}/>
-          <div className="button" onClick={this.onDetail}>↼ Gallery</div>
+          {/* Pagination Component */}
           <Pagination selected={selected} total={content.length}></Pagination>
+          {/* Go to detail Button */}
+          <div className="button" onClick={this.onDetail}>↼ Gallery</div>
+          {/* Images Blocks Component */}
+          <Image src={content[selected]}/>
+          {/* Copyrights block */}
           <div className="copyrights">© 2018 Tam Nguyen.  All rights reserved.</div>
+          {/* Web title block */}
           <div className="title">Journey</div>
         </div>
+        {/* Detail Component */}
         <Detail content = {content[selected]} 
                 onBack = {this.onBack}
         ></Detail>

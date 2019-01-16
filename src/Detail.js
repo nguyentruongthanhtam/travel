@@ -50,16 +50,16 @@ export default class Detail extends Component {
           </div>
           <div  className="title" 
                 style={{top: top+'em', left: left!=0 ? left+'em' : 'unset'}}>
-            <h3  className='rellax text' 
+            <div  className='rellax text' 
                   style={{fontSize: '2em',color: textColor, margin: '.5em 0'}}
                   data-rellax-speed='-2'>
               {time}
-            </h3>
-            <h3 className='rellax text'
-                style={{fontSize: '8em', color: textColor, letterSpacing: '.2em', paddingLeft: '.2em'}}
+            </div>
+            <div className='rellax text'
+                style={{fontSize: '8em', letterSpacing: '.2em', paddingLeft: '.2em'}}
                 data-rellax-speed='-4'>
               {name}
-            </h3>
+            </div>
           </div>
           <div  className='back' 
                 style={{color: textColor}}

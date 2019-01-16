@@ -11,7 +11,6 @@ export default class Pagination extends Component {
       opacity: [0,1],
       duration: 400,
       easing: 'easeInSine'
-
     })
   }
   render(){
