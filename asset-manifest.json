@@ -1,7 +1,7 @@
 {
-  "main.css": "/travel/static/css/main.d788b120.chunk.css",
-  "main.js": "/travel/static/js/main.72a50448.chunk.js",
-  "main.js.map": "/travel/static/js/main.72a50448.chunk.js.map",
+  "main.css": "/travel/static/css/main.3cef5697.chunk.css",
+  "main.js": "/travel/static/js/main.af4ac10e.chunk.js",
+  "main.js.map": "/travel/static/js/main.af4ac10e.chunk.js.map",
   "static/css/1.13bae545.chunk.css": "/travel/static/css/1.13bae545.chunk.css",
   "static/js/1.bfafe0f8.chunk.js": "/travel/static/js/1.bfafe0f8.chunk.js",
   "static/js/1.bfafe0f8.chunk.js.map": "/travel/static/js/1.bfafe0f8.chunk.js.map",
@@ -25,8 +25,8 @@
   "static/media/Tokyo-m.png": "/travel/static/media/Tokyo-m.d31f77b5.png",
   "static/media/7.jpg": "/travel/static/media/7.863450a1.jpg",
   "static/css/1.13bae545.chunk.css.map": "/travel/static/css/1.13bae545.chunk.css.map",
-  "static/css/main.d788b120.chunk.css.map": "/travel/static/css/main.d788b120.chunk.css.map",
+  "static/css/main.3cef5697.chunk.css.map": "/travel/static/css/main.3cef5697.chunk.css.map",
   "index.html": "/travel/index.html",
-  "precache-manifest.46c3733ad0ec1b65c4be7359eaff45d8.js": "/travel/precache-manifest.46c3733ad0ec1b65c4be7359eaff45d8.js",
+  "precache-manifest.60c233f3f3d6ce131dbf6c3eba24b1a3.js": "/travel/precache-manifest.60c233f3f3d6ce131dbf6c3eba24b1a3.js",
   "service-worker.js": "/travel/service-worker.js"
 }

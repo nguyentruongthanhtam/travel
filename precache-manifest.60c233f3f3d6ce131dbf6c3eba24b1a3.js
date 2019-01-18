@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/travel/static/media/Crete-f.ebdf8b8d.jpg"
   },
   {
-    "revision": "72a504485e1ecf5cf9d6",
-    "url": "/travel/static/css/main.d788b120.chunk.css"
+    "revision": "af4ac10e9b353a942b48",
+    "url": "/travel/static/css/main.3cef5697.chunk.css"
   },
   {
     "revision": "863450a1fdf5571daa9b51a1bfc5b34c",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/travel/static/media/6.7e786550.jpg"
   },
   {
-    "revision": "72a504485e1ecf5cf9d6",
-    "url": "/travel/static/js/main.72a50448.chunk.js"
+    "revision": "af4ac10e9b353a942b48",
+    "url": "/travel/static/js/main.af4ac10e.chunk.js"
   },
   {
     "revision": "40e282013e193ece7b7857feb4f0767c",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/travel/static/css/1.13bae545.chunk.css"
   },
   {
-    "revision": "96427c3c73f10c54858e225846b0c418",
+    "revision": "e89decebff59f511ca75080dbafcac3b",
     "url": "/travel/index.html"
   }
 ];
